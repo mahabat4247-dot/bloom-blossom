@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloom & Blossom - Modern and elegant floral boutique offering handcrafted artisan bouquets for every occasion.">
+  <title>Bloom & Blossom | Modern Floral Boutique</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span>🌸 Fresh Seasonal Blooms Delivered Same-Day • Free Delivery on Orders Over $75</span>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">Bloom <span class="ampersand">&amp;</span> Blossom</span>
+      </a>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#catalog" class="nav-link">Catalog</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-btn" id="open-cart-btn" aria-label="View Shopping Cart">
+          <span class="cart-icon">🛍️</span>
+          <span class="cart-text">Cart</span>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="subheading">Artisan Floral Studio</span>
+          <h1 class="hero-title">Elegance Handcrafted into Every Floral Arrangement</h1>
+          <p class="hero-description">
+            Brighten any space with our curated collection of fresh, sustainably sourced floral arrangements. Crafted by master florists for life's unforgettable moments.
+          </p>
+          <div class="hero-actions">
+            <a href="#catalog" class="btn btn-primary">Shop Now</a>
+            <a href="#about" class="btn btn-outline">Our Story</a>
+          </div>
+          <div class="hero-badges">
+            <div class="badge-item">
+              <span class="badge-icon">🚚</span>
+              <span>Same-Day Shipping</span>
+            </div>
+            <div class="badge-item">
+              <span class="badge-icon">✨</span>
+              <span>100% Fresh Guarantee</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="image-card">
+            <img
+              src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=1000&q=80"
+              alt="Elegantly arranged pastel bouquet with roses and eucalyptus"
+              class="hero-img"
+              data-fallback="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=1000&q=80"
+            >
+            <div class="image-overlay-card">
+              <span class="overlay-tag">Signature Selection</span>
+              <p class="overlay-text">Rosé &amp; Sage Romance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog-section" id="catalog">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-accent">Curated Collection</span>
+          <h2 class="section-title">Featured Floral Bouquets</h2>
+          <p class="section-subtitle">
+            Hand-picked fresh flowers arranged with passion, grace, and timeless aesthetic beauty.
+          </p>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+          <!-- Products rendered by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container about-container">
+        <div class="about-image-grid">
+          <div class="about-img-frame">
+            <img
+              src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&q=80"
+              alt="Florist meticulously arranging a wedding bouquet"
+              class="about-img"
+              data-fallback="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&q=80"
+            >
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag font-accent">Our Passion &amp; Heritage</span>
+          <h2 class="section-title">Bringing Nature's Finest Poetry to Your Home</h2>
+          <p class="about-text">
+            Founded with a vision to revolutionize floral design, <strong>Bloom &amp; Blossom</strong> brings together botanical expertise and modern Scandinavian minimalism. We partner with sustainable eco-farms to select only the healthiest stems.
+          </p>
+          <p class="about-text">
+            Every arrangement is tailored to express emotion—whether celebrating love, expressing gratitude, or simply bringing soft elegance to your living space.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">12k+</span>
+              <span class="stat-label">Happy Customers</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Eco-Friendly</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Master Florists</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Info Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-accent">Get In Touch</span>
+          <h2 class="section-title">Visit Our Boutique or Contact Us</h2>
+          <p class="section-subtitle">
+            We would love to welcome you to our shop or help you curate the perfect custom order.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <h3>Boutique Information</h3>
+
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div>
+                <strong>Address</strong>
+                <p>742 Evergreen Terrace, Floral District<br>New York, NY 10012</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">📞</span>
+              <div>
+                <strong>Phone &amp; WhatsApp</strong>
+                <p>+1 (555) 356-8736</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <p>hello@bloomandblossom.demo</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">🕒</span>
+              <div>
+                <strong>Opening Hours</strong>
+                <p>Mon - Fri: 8:00 AM - 7:00 PM<br>Sat - Sun: 9:00 AM - 5:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <h3>Send Us a Message</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="e.g. Eleanor Vance" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="e.g. eleanor@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="4" placeholder="Tell us about your event or custom floral request..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col footer-brand">
+        <a href="#" class="logo logo-light">
+          <span class="logo-icon">🌿</span>
+          <span class="logo-text">Bloom &amp; Blossom</span>
+        </a>
+        <p class="footer-desc">
+          Crafting moments of beauty with premium botanical designs and sustainably harvested blooms.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#catalog">Bouquet Catalog</a></li>
+          <li><a href="#about">About Our Studio</a></li>
+          <li><a href="#contact">Contact &amp; Hours</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Customer Care</h4>
+        <ul class="footer-links">
+          <li><a href="#contact">Flower Care Guide</a></li>
+          <li><a href="#contact">Delivery Information</a></li>
+          <li><a href="#contact">Custom Event Florals</a></li>
+          <li><a href="#contact">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Follow Our Journey</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-icon">📷</a>
+          <a href="#" aria-label="Pinterest" class="social-icon">📌</a>
+          <a href="#" aria-label="Facebook" class="social-icon">📘</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2025 Bloom &amp; Blossom. Created for DevOps Demonstration Purposes.</p>
+        <p class="demo-notice">Note: This is a demonstration static website. No live payment or orders processed.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shopping Cart Drawer Overlay & Modal -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart">
+    <div class="cart-drawer-header">
+      <h3>Your Shopping Cart</h3>
+      <button class="close-cart-btn" id="close-cart-btn" aria-label="Close Shopping Cart">&times;</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-items-container">
+      <!-- Cart items rendered by script.js -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-summary-row">
+        <span>Subtotal</span>
+        <span id="cart-subtotal" class="amount">$0.00</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Estimated Shipping</span>
+        <span id="cart-shipping" class="amount">Free</span>
+      </div>
+      <div class="cart-summary-row total-row">
+        <span>Total</span>
+        <span id="cart-total" class="amount">$0.00</span>
+      </div>
+
+      <button class="btn btn-primary btn-block" id="checkout-btn">Proceed to Checkout</button>
+      <button class="btn btn-outline-danger btn-block" id="clear-cart-btn">Clear Cart</button>
+      <p class="demo-disclaimer">⚡ Demo Mode: Checkout will simulate order confirmation.</p>
+    </div>
+  </aside>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

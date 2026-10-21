@@ -1,0 +1,11 @@
+{
+  "tag-pair": true,
+  "title-require": true,
+  "doctype-first": true,
+  "id-class-value": "dash",
+  "spec-char-escape": false,
+  "id-unique": true,
+  "src-not-empty": true,
+  "attr-no-duplication": true,
+  "alt-require": true
+}

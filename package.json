@@ -1,0 +1,29 @@
+{
+  "name": "bloom-and-blossom",
+  "version": "1.0.0",
+  "description": "Bloom & Blossom - Modern and Elegant Flower Shop Website",
+  "main": "script.js",
+  "scripts": {
+    "lint:html": "htmlhint \"*.html\"",
+    "lint:js": "eslint script.js",
+    "lint": "npm run lint:html && npm run lint:js",
+    "build": "node -e \"const fs = require('fs'); if (fs.existsSync('dist')) fs.rmSync('dist', { recursive: true }); fs.mkdirSync('dist'); ['index.html', 'styles.css', 'script.js'].forEach(f => fs.copyFileSync(f, 'dist/' + f)); console.log('Build complete: Files copied to dist/');\""
+  },
+  "keywords": [
+    "flower-shop",
+    "devops",
+    "bloom-and-blossom",
+    "static-website"
+  ],
+  "author": "Bloom & Blossom Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.0",
+    "globals": "^15.15.0",
+    "htmlhint": "^1.1.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
